@@ -5,8 +5,8 @@ const galleryFiles = import.meta.glob('../assets/images/season-*/**/*.webp', { e
 const fileName = (path) => path.split('/').pop().replace(/\.webp$/i, '').replace(/[_-]+/g, ' ').replace(/\s+/g, ' ').trim()
 const findCover = (name) => Object.entries(coverFiles).find(([path]) => path.endsWith(`/${name}`))?.[1]
 const seasonMeta = {
-  'season-1': { title: 'Season 1', year: '2022-2023', palette: 'ice', code: 'Jost', call: 'First days in the snow, first trips and the beginning of the adventure', highlights: ['First days in the American winter', 'Exploring cities and mountains', 'Moments that shaped the beginning'], accents: ['aurora', 'frost', 'midnight', 'neon', 'ember', 'glacier'] },
-  'season-2': { title: 'Season 2', year: '2023-2024', palette: 'shadow', code: 'DC', call: 'More control, more presence and a second season with its own identity', highlights: ['More confidence on the slopes and in every choice', 'More trips, more visual references', 'A season with a stronger presence'], accents: ['void', 'electric', 'steel', 'ember', 'noir', 'iceburn'] }
+  'season-1': { title: '1st Season', year: '2022-2023', palette: 'ice', code: 'Jost', call: 'First days in the snow, first trips and the beginning of the adventure', highlights: ['First days in the American winter', 'Exploring cities and mountains', 'Moments that shaped the beginning'], accents: ['aurora', 'frost', 'midnight', 'neon', 'ember', 'glacier'] },
+  'season-2': { title: '2nd Season', year: '2023-2024', palette: 'shadow', code: 'DC', call: 'More control, more presence and a second season with its own identity', highlights: ['More confidence on the slopes and in every choice', 'More trips, more visual references', 'A season with a stronger presence'], accents: ['void', 'electric', 'steel', 'ember', 'noir', 'iceburn'] }
 }
 
 const gallery = Object.entries(galleryFiles).map(([path, image], index) => {

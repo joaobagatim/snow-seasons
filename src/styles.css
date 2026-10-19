@@ -13,3 +13,36 @@
 .flag{font-size:0}.flag::after{content:'USA';font-size:11px}
 .hero-center h1 em{color:#d7e1e6;text-shadow:0 2px 16px rgba(0,0,0,.55)}
 .season-copy .eyebrow{color:#d7e1e6;text-shadow:0 2px 12px rgba(0,0,0,.55)}
+.topbar nav{margin-inline:auto}
+@media(max-width:760px){.topbar nav{justify-content:center;gap:24px;margin-inline:0}}
+.topbar{position:relative}.topbar nav{position:absolute;left:50%;transform:translateX(-50%);margin:0;white-space:nowrap}
+@media(max-width:760px){.topbar nav{position:static;transform:none;width:100%;white-space:normal}}
+img[src*="4E08D2C5-0A8A-4C22-A0EA-26DD8F2FE062"]{transform:rotate(90deg) scale(1.12)}
+img[src*="4E08D2C5-0A8A-4C22-A0EA-26DD8F2FE062"]{transform:rotate(-90deg) scale(1.12)}
+.scroll-mark{display:none}
+.featured-next{position:absolute;z-index:3;right:24px;top:50%;transform:translateY(-50%);width:48px;height:48px;border:1px solid rgba(255,255,255,.65);border-radius:50%;background:rgba(5,10,15,.4);color:#fff;font-size:23px;line-height:1;transition:all .25s}.featured-next:hover{background:#fff;color:#111}
+.featured-prev{position:absolute;z-index:3;left:24px;top:50%;transform:translateY(-50%);width:48px;height:48px;border:1px solid rgba(255,255,255,.65);border-radius:50%;background:rgba(5,10,15,.4);color:#fff;font-size:23px;line-height:1;transition:all .25s}.featured-prev:hover{background:#fff;color:#111}
+.featured{background:#202930}.featured>img{object-fit:contain}
+.thumbnail-grid img{object-fit:contain;background:#202930}
+@media(max-width:760px){.hero-center{top:42%}}
+.hero-center{top:38%}
+@media(max-width:760px){.hero-center{top:38%}}
+.hero-season:hover{transform:scale(1.07);z-index:2}
+.hero-season{background-position:center top}
+.featured{height:540px}
+.featured>img,.thumbnail-grid img{object-fit:cover}
+.thumbnail-grid img{height:130px;background:transparent}
+@media(max-width:760px){.featured{height:360px}.thumbnail-grid img{height:120px}}
+.season-header,.season-intro,.season-layout{max-width:1400px}
+.season-layout{grid-template-columns:250px 1fr;gap:70px}
+.featured{height:600px}
+@media(max-width:760px){.season-layout{grid-template-columns:1fr;gap:35px}.featured{height:360px}}
+.featured>img{cursor:zoom-in}
+.highlight-tile{border:0;padding:0;text-align:left;cursor:zoom-in}
+.featured>img{cursor:default}
+.highlight-tile{cursor:default}
+.thumbnail-grid button,.thumbnail-grid img{cursor:default}
+.season-header,.season-intro,.season-layout{max-width:1200px}
+.season-layout{grid-template-columns:230px 1fr;gap:55px}
+.featured{height:540px}
+@media(max-width:760px){.season-layout{grid-template-columns:1fr;gap:35px}.featured{height:360px}}
